@@ -1,0 +1,36 @@
+:root{
+    --offcanvas-width:250px;
+}
+.sidebar-nav{
+    width: var(--offcanvas-width);
+    --topNavbarHeight:56px;
+    border-top: 2px solid white;
+}
+.sidebar-link{
+    display: flex;
+    align-items: center;
+}
+.sidebar-link .right-icon{
+    display: inline-flex;
+    transition: all ease 0.25s;
+}
+.sidebar-link[aria-expanded="true"] .right-icon{
+    transform:rotate(180deg);
+}
+@media(min-width:992px){
+    body{
+        display: auto !important;
+     }
+    .offcanvas-backdrop::before{
+        display: none;
+    }
+    main{
+        margin-left: var(--offcanvas-width);
+    }
+    .sidebar-nav{
+        transform: none;
+        visibility: visible !important;
+        top: var(--topNavbarHeight);
+        height: calc(100%--topNavbarHeight);
+    }
+}

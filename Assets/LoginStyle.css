@@ -1,0 +1,31 @@
+body {
+    background: linear-gradient(rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),url('../inventory.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+.container-fluid{
+    align-items: center;
+}
+.main {
+    background-color: rgba(252, 252, 249, 0.973);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 150px;
+}
+button{
+    width: 100%;
+}
+.form-control{
+    background-color: rgba(252, 252, 249, 0.973);
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
